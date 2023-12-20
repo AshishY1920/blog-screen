@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Cube Page Slider Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="./Assets/JS/bare-bone-slider.min.js"></script>
+    <link rel="stylesheet" href="./Assets/Css/bare-bone-slider.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="icon">
+        <img
+          src="https://hiscraves-res.cloudinary.com/image/upload/v1687782831/v2icons/Header/hiscrave_logo_desktop.svg"
+          alt="Icon"
+        />
+      </div>
+
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul>
+          <li class="active">
+            <a href="#" data-direction="front">Home</a>
+          </li>
+          <li>
+            <a href="#" data-direction="back">Trending Category</a>
+          </li>
+          <li>
+            <a href="#" data-direction="top">Products</a>
+          </li>
+          <li>
+            <a href="#" data-direction="right"
+              >Subscribe Newsletter / Quick Links</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrap">
+      <div class="cube">
+        <section class="page active face front" id="home">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <!-- slider code starts here -->
+              <div class="bb-slider slider-example">
+                <div class="slide bb-slide one">
+                  <!-- Bare-bone Carousel/Slider Example -->
+                </div>
+                <div class="slide bb-slide two">
+                  <!-- jQueryScript -->
+                </div>
+                <div class="slide bb-slide three">
+                  <!-- jQueryScript -->
+                </div>
+                <div class="bb-dots">
+                  <span class="bb-dot"></span>
+                  <span class="bb-dot"></span>
+                  <span class="bb-dot"></span>
+                </div>
+              </div>
+              <!-- slider code ends here -->
+            </div>
+          </div>
+        </section>
+
+        <section class="page face back fashion" id="portfolio">
+          <img
+            class="img-reng"
+            src="./Assets/Images/1626864127_491584.gif"
+            alt=""
+          />
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <div class="container-fluid fashion-blog">
+                <div class="header-container">
+                  <h1>Welcome To Our Fashion Blog</h1>
+                </div>
+                <p>
+                  New Year’s Day is a new beginning. It’s a time to be grateful
+                  and celebrate life. New Year is also a great time to wish
+                  family, friends.
+                </p>
+                <p>
+                  New Year’s Day is a new beginning. It’s a time to be grateful
+                  and celebrate life. New Year is also a great time to wish
+                  family, friends.New Year is also a great time to wish family,
+                  friends.
+                </p>
+
+                <div class="header-container new-container">
+                  <h1>Trending Category</h1>
+                </div>
+
+                <!-- grid container -->
+                <div class="grid-row-container-category">
+                  <div>
+                    <img
+                      src="./Assets/Images/depositphotos_18885485-stock-photo-nothing-to-wear-concept-young.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/image-beautiful-happy-woman-stylist-600nw-1334246261.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img src="./Assets/Images/maxresdefault.jpg" alt="" />
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <!-- grid container -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page face top" id="about">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">
+              <div class="container-fluid">
+                <div class="header-container new-header-container">
+                  <h1>Women's Wear</h1>
+                </div>
+
+                <div class="product-grid-container">
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header-container new-header-container">
+                  <h1>Men's Wear</h1>
+                </div>
+
+                <div class="product-grid-container">
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header-container new-header-container">
+                  <h1>Lifestyle</h1>
+                </div>
+
+                <div class="product-grid-container">
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header-container new-header-container">
+                  <h1>Festival</h1>
+                </div>
+
+                <div class="product-grid-container">
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="./Assets/Images/two-beautiful-girls-have-fun-fitting-room_85574-6991.avif"
+                      alt=""
+                    />
+                    <div class="para-content">
+                      <p>Clothes</p>
+                      <h3>Smarter Clothes Choice 103 Tips For Busy Guys!</h3>
+                    </div>
+                    <div class="read-by">
+                      <p>
+                        <img
+                          src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg"
+                          alt=""
+                        />
+                        Sergio Palam |&nbsp;
+                        <i class="fa-regular fa-clock"></i> &nbsp;3 min read |
+                        &nbsp; <i class="fa-regular fa-eye"></i> &nbsp; 5k
+                      </p>
+                      <a class="link" href="#">
+                        See Details
+                        <svg
+                          class="icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linejoin="round"
+                            stroke-miterlimit="10"
+                          >
+                            <circle
+                              class="icon-circle"
+                              cx="16"
+                              cy="16"
+                              r="14.11"
+                            />
+                            <path
+                              class="icon-arrow"
+                              d="m12.855 9.93 6.07 6.07-6.07 6.07"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page face right" id="contact">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">contact Page</div>
+          </div>
+        </section>
+        <section class="page face bottom" id="blog">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">blog Page</div>
+          </div>
+        </section>
+        <section class="page face left" id="article">
+          <div class="act-table text-center">
+            <div class="act-table-cell ver-middle">article Page</div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      jQuery(".slider-example").BBSlider({
+        slideDuration: 3000,
+        autoPlay: true,
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navList = document.querySelector("nav ul");
+
+        mobileMenu.addEventListener("click", function () {
+          navList.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
