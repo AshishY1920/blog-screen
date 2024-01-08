@@ -1,0 +1,553 @@
+/* font family include */
+@font-face {
+  font-family: "Cabinet_Bold";
+  src: url("../Fonts/Cabinet_Grotesk/CabinetGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cabinet_Medium";
+  src: url("../Fonts/Cabinet_Grotesk/CabinetGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "SteelFish";
+  src: url("../Fonts/SteelFish/SteelfishRg-Regular_400.ttf");
+}
+
+@font-face {
+  font-family: "Cabinet_ExtraBold";
+  src: url("../Fonts/Cabinet_Grotesk/CabinetGrotesk-Extrabold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins_Regular";
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+/* font family include */
+
+/* css reset */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #757575 #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  /* overflow-x: hidden; */
+  background-color: #f1f3f6;
+}
+/* css reset */
+
+/* navbar css code starts here */
+.bg-body-tertiary {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+nav {
+  padding: 15px 10px !important;
+  background: #f1f3f6 !important;
+  box-shadow: 5px 5px 10px 0px rgba(55, 84, 170, 0.1), -5px -0px 1px 0px #fff !important;
+}
+
+.nav-link {
+  font-family: "Cabinet_Bold";
+  color: #000;
+  margin-left: 20px;
+}
+
+button:focus:not(:focus-visible),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  outline: none !important;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbar-brand > img {
+    width: 120px;
+  }
+}
+/* navbar css code ends here */
+
+/* slider css code starts here */
+.slider {
+  position: relative;
+  top: 0px;
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 500px;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow-clip-margin: unset;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 10vw;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* .next-slide,
+.prev-slide {
+  position: absolute;
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125;
+  margin: 0;
+  border: 0.125rem solid white;
+  backface-visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.prev-slide {
+  left: 2%;
+}
+
+.next-slide {
+  right: 2%;
+}
+
+.next-slide:hover,
+.prev-slide:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.next-slide::before,
+.prev-slide::before {
+  position: absolute;
+  top: 35%;
+  display: inline-block;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  content: "";
+  border-left: 0.25rem solid white;
+  border-top: 0.25rem solid white;
+  backface-visibility: hidden;
+}
+
+.prev-slide::before {
+  transform: rotate(-45deg);
+  right: 33%;
+}
+
+.next-slide::before {
+  transform: rotate(135deg);
+  left: 33%;
+}
+@media screen and (max-width: 42.5em) {
+  .next-slide,
+  .prev-slide {
+    display: none;
+  }
+} */
+@media screen and (max-width: 61.25em) {
+  .slider {
+    max-height: 37.959184vw;
+  }
+}
+@media screen and (min-height: 61.25em) {
+  .slider {
+    max-height: 41.959184vw;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .slide img {
+    height: initial;
+    border-radius: 11px;
+    object-fit: contain;
+  }
+}
+
+/* slider css code ends here */
+
+/* text content css starts here */
+.text-content {
+  text-align: center;
+  margin: 20px auto 20px auto;
+}
+
+.content-container {
+  max-width: 920px !important;
+  margin: auto;
+}
+
+.text-content > .container > h1 {
+  font-family: "SteelFish";
+  color: #770015;
+  font-size: 54px;
+}
+
+.text-content > .container > p {
+  margin-top: 15px;
+  font-family: "Cabinet_Medium";
+  font-size: 18px;
+  color: #1c1c1c;
+}
+
+@media screen and (max-width: 576px) {
+  .text-content > .container > h1 {
+    font-size: 36px;
+  }
+  .text-content > .container > p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+/* text content css ends here */
+
+/* categories css starts here */
+.trending-categories {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.categories-container > h2 {
+  font-family: "SteelFish";
+  font-size: 40px;
+  color: #1c1c1c;
+}
+
+.categories-grid-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 20px 0px 20px 0px;
+  gap: 20px;
+}
+
+.categories-grid-row > div {
+  height: auto;
+  position: relative;
+  top: 0;
+}
+
+.categories-grid-row > div > img {
+  width: 100%;
+}
+
+.categories-grid-row > div > p {
+  position: absolute;
+  bottom: -16px;
+  font-size: 18px;
+  color: white;
+  border-radius: 0px 0px 11px 11px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  font-family: "SteelFish";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+  .categories-grid-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* categories css ends here */
+
+/* wear grid row css starts here */
+.wear-grid-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.wear-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.wear-header > h3 {
+  font-family: "SteelFish";
+  font-size: 40px;
+  color: #1c1c1c;
+  margin-top: 5px;
+}
+
+.wear-grid-row > div {
+  border: 1px solid black;
+  height: auto;
+  border-radius: 11px;
+  border: 1px solid #d8e1f0;
+
+  background: #f1f3f6;
+}
+
+.wear-grid-row > div > img {
+  border-radius: 11px 11px 0px 0px;
+  width: 100%;
+}
+
+.wear-content {
+  padding: 5px 15px 0px 15px;
+}
+
+.wear-content p {
+  font-family: "SteelFish";
+  font-size: 24px;
+  color: #1c1c1c;
+  margin-bottom: 0rem;
+}
+
+.share-icon-posted-dt {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.share-icon-posted-dt > div > p {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Cabinet_Medium";
+  margin-bottom: 1rem;
+}
+
+.svg-icon {
+  width: 23.26px;
+  height: 23.063px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .wear-grid-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .wear-grid-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wear-grid-row {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+/* wear grid row css ends here */
+
+/* offer container starts here */
+.offer-container {
+  background-color: #770015;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.offer-container > p {
+  margin-bottom: 0rem;
+  font-family: "Cabinet_Medium";
+  font-size: 14px;
+  color: #fff;
+}
+
+/* offer container ends here */
+
+/* subcribe css code starts here */
+.container-subscribe-row {
+  position: relative;
+  z-index: 888;
+  max-width: 806px;
+  margin: auto;
+}
+
+.subscribe-row {
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.4) -8.95%,
+    rgba(255, 255, 255, 0.01) 114%
+  );
+  backdrop-filter: blur(50px);
+  border: 1px solid white;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 888;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.container-subscribe-row > img:nth-child(1) {
+  position: absolute;
+  top: -65px;
+  right: -65px;
+  z-index: -1;
+}
+
+.container-subscribe-row > img:nth-child(2) {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  z-index: -1;
+}
+
+.subscribe-row {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+}
+
+.subscribe-row > h4 {
+  font-family: "SteelFish";
+  font-size: 64px;
+  color: #770015;
+}
+
+.subscribe-row > p {
+  font-family: "Poppins_Regular";
+  font-size: 14px;
+  margin-top: -0.3rem;
+  margin-bottom: 0rem;
+}
+
+.subscribe-input-cta {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  max-width: 500px;
+  margin: 10px auto 20px auto;
+}
+
+.subscribe-input-cta > input {
+  width: 100%;
+  border: none;
+  background-color: white;
+  outline: none;
+  height: 48px;
+  font-size: 16px;
+  padding: 0px 10px 0px 10px;
+  font-family: "Cabinet_Medium";
+  border: 1px solid #f7f7f7;
+}
+
+.subscribe-input-cta > button {
+  background-color: #ffcc49 !important;
+  box-shadow: 0px 10px 20px 0px rgba(255, 204, 73, 0.16);
+  font-family: "Cabinet_ExtraBold";
+  font-size: 16px;
+  color: #1c1c1c;
+  border-radius: 0px !important;
+  text-transform: capitalize !important;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe-input-cta {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-subscribe-row {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container-subscribe-row {
+    max-width: 95%;
+    margin: auto;
+  }
+  .subscribe-row > h4 {
+    font-size: 42px;
+  }
+  .container-subscribe-row > img:nth-child(1) {
+    right: 0;
+  }
+}
+/* subscribe css code ends here */
