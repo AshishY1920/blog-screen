@@ -507,7 +507,7 @@ button:not(:disabled) {
 .offer-container {
   background-color: #770015;
   text-align: center;
-  padding: 5px 0px 5px 0px;
+  padding: 5px 10px 5px 10px;
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
