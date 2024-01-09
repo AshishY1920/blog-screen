@@ -5,28 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#770015" />
 
-    <!-- Dark mode styles -->
-    <style>
-      @media (prefers-color-scheme: dark) {
-        /* Dark mode theme color */
-        meta[name="theme-color"] {
-          content: #770015;
-        }
-      }
-    </style>
-
-    <script>
-      // Dynamically set theme color based on dark mode preference
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ) {
-        document
-          .querySelector('meta[name="theme-color"]')
-          .setAttribute("content", "#770015");
-      }
-    </script>
-
     <!-- favicon -->
     <link
       rel="shortcut icon"
