@@ -779,8 +779,8 @@ footer {
     display: block;
   }
   footer {
-    top: 0;
-    bottom: initial;
+    top: initial;
+    bottom: 20px;
   }
   .underline-container {
     display: block;
